@@ -1,0 +1,48 @@
+/* Page Base */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  max-width: 750px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background: #d5fff2;
+  color: #2e2e2e;
+  line-height: 1.7;
+}
+
+/* Back Link */
+a[href$="html"] {
+  display: inline-block;
+  margin-bottom: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #3b82f6;
+  transition: 0.3s;
+}
+
+a[href$="html"]:hover {
+  color: #1e5fd1;
+}
+
+/* Page Title */
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Paragraph */
+p {
+  font-size: 18px;
+  text-align: justify;
+  color: #444;
+}
+
+/* Optional: Soft drop shadow card look */
+body > p {
+  background: white;
+  padding: 22px 28px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}

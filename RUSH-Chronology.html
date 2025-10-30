@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> RUSH CHRONOLOGY</title>
+</head>
+<body>
+
+<style>
+  body {
+  background: #f7f3e1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 60px;
+  font-size: 36px;
+  color:#3b82f6
+}
+
+/* Century section titles */
+.century-group {
+  margin-bottom: 80px;
+}
+
+.century-group h2 {
+  color: #486d55;
+  margin-bottom: 30px;
+  font-size: 28px;
+  /* text-decoration: ; */
+}
+
+/* Timeline line container */
+.timeline-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Items */
+.timeline-item {
+  width: 150px;
+  text-align: center;
+}
+
+
+.timeline-century {
+  width: 90%;
+  margin: 40px auto 80px auto;
+  position: relative;
+  height: 120px;
+}
+
+/* Main horizontal line */
+.timeline-line1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #41b039;
+}
+
+.timeline-line2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #35dbed;
+}
+
+.timeline-line3 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #e5f71a;
+}
+
+.timeline-line4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #b738e9;
+}
+
+/* Tick marks */
+.ticks div {
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background: #333;
+  top: calc(50% - 6px);
+  transform: translateX(-1px);
+}
+
+.ticks span {
+  position: absolute;
+  top: calc(50% + 14px);
+  font-size: 12px;
+  color: #333;
+  transform: translateX(-50%);
+}
+
+
+.year {
+  font-weight: bold;
+  color: #000000;
+  margin-top: 17px;
+}
+
+.title a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.title a:hover {
+  color: #3b82f6;
+}
+
+/* Event dots and labels */
+.event {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(49px);
+  text-align: center;
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 4px solid #3b82f6;
+  border-radius: 50%;
+  margin: auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* transform: translateX(30px);
+  /* transform: translateY(50px) */
+}
+
+.dot-1619 { 
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(51px);
+  text-align: center;
+  left: 13%; 
+}
+
+.dot-1662 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(51px);
+  text-align: center;
+  left: 48%; 
+}
+
+.dot-1763 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(51px);
+  text-align: center;
+  left: 15%;  
+}
+
+.dot-1765 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-36.5px);
+  text-align: center;
+  left: 24%; 
+}
+
+.dot-1770 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(51px);
+  text-align: center;
+  left: 35%; 
+}
+
+.dot-1774 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-36.5px);
+  text-align: center;
+  left: 41%;  
+}
+
+.dot-1776 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(50.5px);
+  text-align: center;
+  left: 43%;
+}
+
+.dot-1787 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(51px);
+  text-align: center;
+  left: 68%;
+}
+
+.dot-1800 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(51px);
+  text-align: center;
+  left: -5%;
+}
+
+.dot-1803 {
+  position: absolute;
+  transform: translateX(-50%);
+  transform: translateY(-36.5px);
+  text-align: center;
+  left: -2%;
+}
+
+</style>
+
+<h1>RUSH CHRONOLOGY</h1>
+
+
+<!-- 17th Century -->
+<section class="century-group">
+  <h2>17th Century</h2>
+
+  <div class="timeline-century" data-start="1600" data-end="1700">
+
+    <!-- tick marks for every 10 years -->
+    <div class="ticks">
+    </div>
+
+    <!-- The main line -->
+    <div class="timeline-line1"></div>
+
+    <!-- Events  -->
+    <div class="event dot-1619">
+      <div class="timeline-dot"></div>
+      <p class="year">1619</p>
+      <p class="title"><a href="event1.html">Landing of the Lion</a></p>
+    </div>
+
+    <div class="event dot-1662">
+      <div class="timeline-dot"></div>
+      <p class="year">1662</p>
+      <p class="title"><a href="events2.html">December 1662 Virginia Colonial Law on Race</a></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 18th Century -->
+<section class="century-group">
+  <h2> Late 18th Century</h2>
+
+  <div class="timeline-century" data-start="1750" data-end="1800">
+
+    <!-- tick marks for every 10 years -->
+    <div class="ticks">
+    </div>
+
+    <!-- The main line -->
+    <div class="timeline-line2"></div>
+
+    <!-- Events -->
+    <div class="event dot-1763">
+      <div class="timeline-dot"></div>
+      <p class="year">1763</p>
+      <p class="title"><a href="event3.html">Royal Proclamation Line of 1763</a></p>
+    </div>
+
+    <div class="event dot-1765">
+      <p class="title"><a href="event4.html">Stamp Act Congress</a></p>
+      <p class="year">1765</p>
+      <div class="timeline-dot"></div>
+    </div>
+
+    <div class="event dot-1770">
+      <div class="timeline-dot"></div>
+      <p class="year">1770</p>
+      <p class="title"><a href="event5.html">Boston Massacre </a></p>
+    </div>
+
+    <div class="event dot-1774">
+      <p class="title"><a href="event6.html">Intolerable/ Coercive Acts </a></p>
+      <p class="year">1774</p>
+      <div class="timeline-dot"></div>
+    </div>
+
+    <div class="event dot-1776">
+      <div class="timeline-dot"></div>
+      <p class="title"><a href="event7.html">Declaration of Independence</a></p>
+      <p class="year">1776</p>
+    </div>
+
+    <div class="event dot-1787">
+      <div class="timeline-dot"></div>
+      <p class="year">1787</p>
+      <p class="title"><a href="event8.html">Constitutional Convention</a></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- 19th Century -->
+<section class="century-group">
+  <h2> Early 19th Century</h2>
+
+  <div class="timeline-century" data-start="1800" data-end="1850">
+
+    <!-- tick marks for every 10 years -->
+    <div class="ticks">
+    </div>
+
+    <!-- The main line -->
+    <div class="timeline-line3"></div>
+
+    <!-- Events -->
+    <div class="event dot-1800">
+      <div class="timeline-dot"></div>
+      <p class="year">1800</p>
+      <p class="title"><a href="event9.html">Election of 1800 </a></p>
+    </div>
+
+    <div class="event dot-1803">
+      <p class="title"><a href="event10.html">Marbury v. Madison </a></p>
+      <p class="year">1803</p>
+      <div class="timeline-dot"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 19th Century -->
+<section class="century-group">
+  <h2> Late 19th Century</h2>
+
+  <div class="timeline-century" data-start="1850" data-end="1900">
+
+    <!-- tick marks for every 10 years -->
+    <div class="ticks">
+    </div>
+
+    <!-- The main line -->
+    <div class="timeline-line3"></div>
+
+    <!-- Events -->
+
+  </div>
+</section>
+
+<!-- 20th Century -->
+<section class="century-group">
+  <h2>Early 20th Century</h2>
+
+  <div class="timeline-century" data-start="1900" data-end="1950">
+
+    <!-- tick marks for every 10 years -->
+    <div class="ticks">
+    </div>
+
+    <!-- The main line -->
+    <div class="timeline-line4"></div>
+
+    <!-- Events -->
+
+  </div>
+
+  </div>
+</section>
+
+<!-- 20th Century -->
+<section class="century-group">
+  <h2>Late 20th Century</h2>
+
+  <div class="timeline-century" data-start="1950" data-end="2000">
+
+    <!-- tick marks for every 10 years -->
+    <div class="ticks">
+    </div>
+
+    <!-- The main line -->
+    <div class="timeline-line4"></div>
+
+    <!-- Events -->
+
+  </div>
+
+  </div>
+</section>
+
+<!-- Javascript for ticks and event positioning except event positioning doesnt even work that wwell lol -->
+<script>
+document.querySelectorAll('.timeline-century').forEach(timeline => {
+
+  const start = parseInt(timeline.dataset.start);
+  const end = parseInt(timeline.dataset.end);
+  const range = end - start;
+
+  const ticksContainer = timeline.querySelector('.ticks');
+
+  // Create tick marks every 10 years
+  for (let year = start; year <= end; year += 10) {
+    const percent = ((year - start) / range) * 100;
+    const tick = document.createElement('div');
+    tick.style.left = percent + '%';
+
+    const label = document.createElement('span');
+    label.style.left = percent + '%';
+    label.textContent = year;
+
+    ticksContainer.appendChild(tick);
+    ticksContainer.appendChild(label);
+  }
+
+  // Position event dots
+  timeline.querySelectorAll('.event').forEach(event => {
+    const year = parseInt(event.dataset.year);
+    const percent = ((year - start) / range) * 100;
+    event.style.left = percent + '%';
+  });
+
+});
+</script>
+
+
+</body>
+</html>
+
+<!-- 1619, 1662, 1763, 1765, 1770, 1774, 1776, 1787, 1800, 1803],
+Landing of the Lion- 1619 
+December 1662 Virginia Colonial Law on Race 
+Royal Proclamation Line of 1763 
+Stamp Act Congress 
+Boston Massacre 
+Intolerable/ Coercive Acts 
+Declaration of Independence 
+Constitutional Convention 
+Election of 1800 
+Marbury v. Madison 
+-->
