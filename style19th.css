@@ -5,7 +5,7 @@ body {
   margin: 60px auto;
   padding: 0 20px;
   background: #e7ef8f;
-  color: #2e2e2e;
+  color: #e4419b;
   line-height: 1.7;
 }
 
@@ -45,3 +45,10 @@ body > p {
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
+
+body > img {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+

@@ -5,7 +5,7 @@ body {
   margin: 60px auto;
   padding: 0 20px;
   background: #7de1ec;
-  color: #2e2e2e;
+  color: #9716b1;
   line-height: 1.7;
 }
 
@@ -42,6 +42,12 @@ p {
 body > p {
   background: white;
   padding: 22px 28px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+body > img {
+  background: white;
   border-radius: 10px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 }
